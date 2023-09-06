@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estudio CM</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="httos://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="httos://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="m-1 dark">
+    <header >
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+            <div class="container-fluid col-11">
+                <img class='logo' src="./img/logo.png" alt="logo" id="logo">
+                <img class='logo d-none' src="./img/logo-dark.png" alt="logo" id="logo-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" id="hover" href="#sobreMi">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#contactame">Contactame</a>
+                        </li>
+                        
+                </div>                
+            </div>
+            <div>
+                <a href="#" id="tema" class="link-dark "><svg id="claro" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-moon-stars " viewBox="0 0 16 16">
+                    <path class="heartbeat" d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                  </svg>
+                  <svg id="oscuro" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" bi bi-moon-stars-fill d-none" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                  </svg></a>
+            </div>
+            
+        </nav>
+        
+        <div class="principio">
+            <div>
+                
+                    <h1 data-aos="fade-up" data-aos-duration="3000" class="text-center ">ESTUDIO MC</h1>
+                
+                
+                
+                    <p class="descripcion-inicio text-wrap text-center" data-aos="fade-up" data-aos-duration="2000">Hace más de 10 años nos encargamos de resolver cuestiones de índole administrativa, financiera, impositiva, contable y de recursos humanos. Analizamos la situación, elaboramos un plan de acción y lo llevamos a cabo en los tiempos acordados para lograr una buena administración del negocio.</p>
+                    <p class="descripcion-inicio text-wrap text-center" data-aos="fade-up" data-aos-duration="2000">Contamos con profesionales idóneos de diversas ramas para resolver las distintas tareas que necesite su negocio.</p>
+               
+                </div>
+           
+        </div>
+        <div class="scroll-img shake-vertical">
+            <a href="#servicios"> <img src="./img/scroll.png " alt="scroll down"></a>
+        </div>
+    </header>
+    <main>
+
+
+        <section class="servicios position-relative" id="servicios">
+            <h2 class="servicios-num">01.</h2>
+            <h2 class="servicios-titulo">SERVICIOS</h2>
+            <div class="servicios-tareas row ">
+                <div class="col-4 py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder ">Contable</h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir"></li>                        
+                    </ul>                    
+                </div>
+                <div class="col-3 col-md-4 py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Financiera</h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir1"> </li>
+                    </ul>
+                </div>
+                <div class="col-4   py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Administrativa </h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir2"> </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="servicios-tareas row ">
+                <div class="col-4 py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder ">RRHH</h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir3"></li>                        
+                    </ul>                    
+                </div>
+                <div class="col-3 col-md-4 py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Monotributo</h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir4"> </li>
+                    </ul>
+                </div>
+                <div class="col-4   py-2 px-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Jubilaciones</h3>
+                    <ul class="d-none lista overflow-hidden">
+                        <li class="escribir5"> </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center w-100" >
+                <button class="btn boton mt-1 heartbeat" type="button" id="detalles">
+                    Ver Detalles
+                </button>
+            </div>
+            
+        </section>
+        
+
+        <h2 class="servicios-num">03.</h2>
+            <h2 class="servicios-titulo" id="sobreMi">SOBRE MI</h2>
+        <section class="sobreMi mt-4">
+
+            <div>
+                <div>
+                    <h2 class="sobreMi-h2" data-aos="zoom-in" data-aos-duration="1500">Contador Publico</h2>
+                    <h4 data-aos="zoom-in" data-aos-duration="3500"> (Universidad de Belgrano) - 2010</h4>
+                    
+                </div>
+                <br>
+                <div class="mt-4">
+                    
+                    <h5 data-aos="zoom-in" data-aos-duration="3500">Calidad de servicio y dedicación exclusiva a pequeños como grandes contribuyentes. <br> <br>Experiencia laboral en grandes empresas como Pymes me han dotado la solidez necesaria para brindar soluciones a medida de las necesidades de mis clientes. 
+                    </h5>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        <section class="contactame" id="contactame">
+            <h2 class="servicios-num">04.</h2>
+            <h2 class="servicios-titulo">CONTACTAME</h2>
+            <div class="form">
+                <form action="https://formsubmit.co/cristiandanielcosta@hotmail.com" method="POST">
+                    <div class="my-3 ">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Escribi aqui..." name="nombre">
+                        <label for="exampleFormControlInput1" class="form-label pt-2">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" name="email">
+                        <label for="exampleFormControlInput1" class="form-label pt-2">Asunto</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto..."
+                            name="asunto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribir aqui..." rows="3"
+                            name="texto"></textarea>
+                    </div>
+
+                    <button class="btn boton mt-1" type="submit">
+                        enviar
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://administraciontc.vercel.app/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo pb-2">
+                    <h2>Estudio CM</h2>
+                </div>
+                <div class="footer-links pb-2">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contactame">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social text-center">
+                    <p>Todos los derechos reservados &copy; 2023 | Cristian Mieres</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            perView: 6,
+            gap: 10,
+            autoplay: 2500,
+            bound: true,
+            perTouch: true,
+            animationDuration: 900,
+            rewindDuration: 2000,
+            breakpoints: {
+                800: {
+                    perView: 5,
+                },
+                500: {
+                    perView: 3,
+                    gap:10,
+                }
+            }
+        }).mount()
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./js/index.js  "></script>
+</body>
+
+</html>
