@@ -28,7 +28,6 @@ btn.addEventListener('click', ()=>{
         <li class="border-bottom border-white">Armado del cash-flow real y proyectado.</li>
         <li class="border-bottom border-black">Emisión de transferencias  y pago de impuestos vía Interbanking o portales bancarios.</li>
         <li class="border-bottom border-white">Confeccion de E-Cheqs.</li>
-        <li class="border-bottom border-white">Pago de sueldos.</li>
         <li class="border-bottom border-white">Armado de Informes financieros a medida.</li>
         <li class="border-bottom border-black">Ebitda. </li>`],
         typeSpeed: 10,
@@ -51,13 +50,17 @@ btn.addEventListener('click', ()=>{
       const typed4 = new Typed('.escribir4', {
         strings : [ `<li class="border-bottom border-dark-subtle">Inscripción. </li>
         <li class="border-bottom border-primary-subtle">Facturación.</li>
-        <li class="border-bottom border-success-subtle">Recategorización. </li>`],
+        <li class="border-bottom border-success-subtle algo">Recategorización. </li>`],
         typeSpeed: 10,
       })
       const typed5 = new Typed('.escribir5', {
-        strings : [ ``],
+        strings : [ `<li class="border-bottom border-dark-subtle">Asesoramiento general. Te acompañamos en todo el proceso.</li>
+        <li class="border-bottom border-dark-subtle">Nueva moratoria. Aclaramos dudas y buscamos la mejor alternativa previsional si te faltan
+        años de aporte./li>
+        `],
         typeSpeed: 10,
       })
+      
     }
 
     btn.classList.toggle('heartbeat')

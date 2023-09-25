@@ -626,7 +626,12 @@ button.glide__arrow.glide__arrow--right {
     width: 100vw;
     overflow-x: hidden;
   }
-  
+  li.border-bottom.border-success-subtle {
+    font-size: 0.7rem;
+}
+h3.text-center.fw-bolder.aos-init.aos-animate {
+  font-size: 1.2rem;
+}
   h1{
     font-size: 1.9rem;
     margin-bottom: 3.5rem;
